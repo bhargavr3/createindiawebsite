@@ -597,42 +597,95 @@
                 </div>
             </div>
 
-
-            
             <div class="team-slider-wrap position-relative pb-130">
-    <div class="container">
-        <div class="team-slider-one swiper">
-            <div class="swiper-wrapper justify-content-center">
-                <div class="swiper-slide">
-                    <div class="team-card style-one position-relative z-1 overflow-hidden text-center round-10">
-                        <div class="team-member-bg bg-1 position-absolute top-0 start-0 w-100 h-100 transition"></div>
-                        <div class="team-thumb rounded-circle mx-auto">
-                            <img src="assets/img/team/team-thumb-1.jpg" alt="Image"
-                                class="rounded-circle transition">
-                        </div>
-                        <div class="team-info position-relative z-1">
-                            <h3 class="fs-20 fw-semibold text-title transition">PRASHANT JOSHI</h3>
-                            <span class="fs-15 d-block transition">Co-Founder of C.I.A.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="team-card style-one position-relative z-1 overflow-hidden text-center round-10">
-                        <div class="team-member-bg bg-2 position-absolute top-0 start-0 w-100 h-100 transition"></div>
-                        <div class="team-thumb rounded-circle mx-auto">
-                            <img src="assets/img/team/team-thumb-2.jpg" alt="Image"
-                                class="rounded-circle transition">
-                        </div>
-                        <div class="team-info position-relative z-1">
-                            <h3 class="fs-20 fw-semibold text-title transition">MAULIK JOSHI</h3>
-                            <span class="fs-15 d-block transition">Co-Founder of C.I.A.</span>
-                        </div>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="team-slider-one swiper">
+      <div class="swiper-wrapper">
+        <!-- Team Member 1 -->
+        <div class="swiper-slide">
+          <div class="team-card style-one position-relative z-1 overflow-hidden text-center round-10">
+            <div class="team-member-bg bg-1 position-absolute top-0 start-0 w-100 h-100 transition"></div>
+            <div class="team-thumb rounded-circle mx-auto">
+              <img src="assets/img/team/team-thumb-1.jpg" alt="Image"
+                class="rounded-circle transition">
             </div>
+            <div class="team-info position-relative z-1">
+              <h3 class="fs-20 fw-semibold text-title transition">PRASHANT JOSHI</h3>
+              <span class="fs-15 d-block transition">Co-Founder of C.I.A.</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Team Member 2 -->
+        <div class="swiper-slide">
+          <div class="team-card style-one position-relative z-1 overflow-hidden text-center round-10">
+            <div class="team-member-bg bg-2 position-absolute top-0 start-0 w-100 h-100 transition"></div>
+            <div class="team-thumb rounded-circle mx-auto">
+              <img src="assets/img/team/team-thumb-2.jpg" alt="Image"
+                class="rounded-circle transition">
+            </div>
+            <div class="team-info position-relative z-1">
+              <h3 class="fs-20 fw-semibold text-title transition">MAULIK JOSHI</h3>
+              <span class="fs-15 d-block transition">Co-Founder of C.I.A.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
 </div>
+
+<!-- Swiper JS Init -->
+<script>
+var swiper = new Swiper(".team-slider-one", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: false,
+  centeredSlides: true,
+  centerInsufficientSlides: true,
+  watchOverflow: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,    // ✅ Mobile → 1 full card
+      spaceBetween: 0,
+      centeredSlides: false // don’t center on mobile
+    },
+    768: {
+      slidesPerView: 2,    // Tablet → 2 cards
+      spaceBetween: 20,
+      centeredSlides: true
+    },
+    1024: {
+      slidesPerView: 2,    // Desktop → 2 cards centered
+      spaceBetween: 30,
+      centeredSlides: true
+    }
+  }
+});
+</script>
+
+<!-- CSS Fix -->
+<style>
+/* Only apply centering on tablet+desktop */
+@media (min-width: 768px) {
+  .team-slider-one .swiper-wrapper {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-slider-one .swiper-slide {
+    width: 100% !important; /* Mobile: 1 card fits screen */
+  }
+}
+</style>
+
 
             <!-- Team Section End -->
 
