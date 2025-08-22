@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/dark-theme.css">
+
+    <title>AI Insights by Create India Advertising</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+
+<body>
+
+    <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--  Preloader End -->
+
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Theme Switcher End -->
+
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Navbar Start -->
+            <div class="navbar-area style-two position-relative" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                        
+                        <!-- Logo -->
+                        <a href="index.html" class="navbar-brand">
+                            <img src="assets/img/logo.png" alt="Logo" class="logo-light">
+                            <img src="assets/img/logo-white.png" alt="Logo" class="logo-dark">
+                        </a>
+
+                        <!-- Menu -->
+                        <div class="menu-area mx-auto">
+                            <div class="overlay"></div>
+                            <nav class="menu">
+                                <div class="menu-mobile-header">
+                                    <button type="button" class="menu-mobile-arrow bg-transparent border-0">
+                                        <i class="ri-arrow-left-s-line"></i>
+                                    </button>
+                                    <div class="menu-mobile-title"></div>
+                                    <button type="button" class="menu-mobile-close bg-transparent border-0">
+                                        <i class="ri-close-line"></i>
+                                    </button>
+                                </div>
+                                <ul class="menu-section p-0 mb-0 lh-1">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)">Services <i class="ri-arrow-down-s-fill"></i></a>
+                                        <ul class="menu-subs menu-column-1">
+                                            <li><a href="brandingconsultation.html">Branding Consultation</a></li>
+                                            <li><a href="brandingservices.html">Branding Services</a></li>
+                                            <li><a href="creatives.html">Creative Designs & Videos</a></li>
+                                            <li><a href="printsolution.html">Printing Solutions</a></li>
+                                            <li><a href="digitalmarketing.html">Digital Marketing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="insights.html" class="active">AI Insights</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- Right Side Options -->
+                        <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                            <div class="option-item">
+                                <div class="d-flex flex-wrap align-items-center">
+                                    
+                                    <!-- Mobile WhatsApp Button -->
+                                    <div class="mobile-options position-relative d-lg-none me-3">
+                                        <button class="dropdown-toggle text-center bg-transparent border-0 p-0 transition"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-more-fill"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0"
+                                            data-bs-popper="static">
+                                            <a href="https://wa.me/917211121121?text=I%20need%20best%20work" target="_blank"
+                                                class="btn style-three fw-semibold position-relative round-oval">
+                                                Get In Touch
+                                                <span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center">
+                                                    <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp Icon"
+                                                        style="width:20px; height:20px; object-fit:contain;">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Desktop WhatsApp Button -->
+                            <div class="option-item d-lg-block d-none">
+                                <a href="https://wa.me/917211121121?text=I%20need%20best%20work" target="_blank"
+                                    class="btn style-three fw-semibold position-relative round-oval">
+                                    Get In Touch
+                                    <span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center">
+                                        <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp Icon"
+                                            style="width:20px; height:20px; object-fit:contain;">
+                                    </span>
+                                </a>
+                            </div>
+
+                            <!-- Mobile Menu Trigger -->
+                            <div class="option-item d-lg-none">
+                                <button type="button" class="menu-mobile-trigger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar End -->
+
+            
+            <!-- Breadcrumb Start -->
+            <div class="breadcrumb-area bg-f round-20 position-relative z-1">
+                <div class="container text-center">
+                    <ul class="br-menu text-center bg_secondary d-inline-block list-unstyled mb-15">
+                        <li class="position-relative fs-13 fw-semibold ls-1 d-inline-block"><a
+                                href="index.html">HOME</a></li>
+                        <li class="position-relative fs-13 fw-semibold ls-1 d-inline-block">AI Insights</li>
+                    </ul>
+                    <h2 class="section-title style-one fw-medium font-secondary text-black text-center mb-6">AI Insights
+                    </h2>
+                </div>
+            </div>
+            <!-- Breadcrumb End -->
+
+<!-- AI Insights Section Start -->
+<div class="container style-one pt-130">
+    <div class="row">
+        <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+            <span class="section-subtitle style-two d-inline-block text_primary fw-bold fs-14 ls-15 mb-12">AI INSIGHTS</span>
+            <h2 class="section-title style-one fw-medium text-center text-title mb-40 px-xxl-5">
+                Discover Unique AI Platforms & Tools Shaping The Future
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div class="container style-one ptb-130">
+    <div class="row justify-content-center">
+
+        <!-- 1 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-1.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-1.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Runway</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>AI-powered video editing & content generation.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://runwayml.com" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-2.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-2.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Pictory</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Convert text or scripts into professional videos.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://pictory.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-3.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-3.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Browse AI</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Extract and monitor website data with AI agents.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://browse.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-4.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-4.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Durable</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Instantly build AI-powered websites for businesses.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://durable.co" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-5.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-5.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Suno</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Create full songs and music tracks with AI.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://suno.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-6.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-6.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Kaiber</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Transform ideas into music videos and art animations.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://kaiber.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-7.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-7.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Fliki</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Convert text into AI-powered videos with voiceovers.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://fliki.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-8.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-8.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Rewind</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Your personal AI memory – record & recall everything.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://rewind.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-9.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-9.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Scenario</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Generate unique AI-powered game assets & artwork.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://scenario.com" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-10.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-10.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">ElevenLabs</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Ultra-realistic AI voice generation & dubbing.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://elevenlabs.io" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-11.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-11.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Synthesia</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Create AI-generated avatar videos for training & marketing.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://synthesia.io" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-12.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-12.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">PlayHT</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Generate AI podcasts and audiobooks with lifelike voices.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://play.ht" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-13.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-13.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Illustroke</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Create vector illustrations instantly from text prompts.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Paid</li>
+                        <li><a href="https://illustroke.com" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-14.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-14.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Luma Labs</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Create realistic 3D models & scenes from simple inputs.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://lumalabs.ai" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="job-card style-one img-hover-zoom round-10 mb-30">
+                <div class="job-img position-relative overflow-hidden img-zoom round-10">
+                    <img src="assets/img/job/job-15.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 round-10 transition">
+                    <img src="assets/img/job/job-15.jpg" alt="Image" class="round-10 transition">
+                </div>
+                <div class="job-info">
+                    <h3 class="fs-19 fw-semibold">Cleanup.Pictures</h3>
+                    <ul class="list-unstyled mb-15">
+                        <li>Remove unwanted objects from photos using AI.</li>
+                        <li><span class="fw-medium text-black me-1">Plan:</span> Freemium</li>
+                        <li><a href="https://cleanup.pictures" target="_blank" class="link style-two fw-semibold">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- AI Insights Section End
+
+
+
+            <!-- Footer Section Start -->
+                <footer class="footer-area style-two bg-black position-relative z-1 pt-130">
+                    <div class="container style-one">
+                        <div class="row justify-content-center mb-40">
+                            <div class="col-lg-2 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="Logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30 ps-xxl-5 ms-xxl-1">
+                                    <h3 class="footer-widget-title text-white fs-18 fw-semibold">Quick Links</h3>
+                                    <ul class="footer-menu list-unstyled mb-0">
+                                        <li><a href="about-us.html">Features</a></li>
+                                        <li><a href="about-us.html">About</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="pricing-plan.html">Pricing</a></li>
+                                        <li><a href="blog-right-sidebar.html">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 ps-xxl-0 pe-xxl-5 pe-lg-4">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title text-white fs-18 fw-semibold">Address</h3>
+                                    <ul class="contact-info list-unstyled mb-0">
+                                        <li class="position-relative">
+                                            <img src="assets/img/icons/pin-small.svg" alt="Icon">
+                                            <span class="text-white fw-medium">Address :</span>  
+                                            601, Kings Plaza, Tagore Rd, Astron Chowk, Sardarnagar, Rajkot, Gujarat 360001
+                                        </li>
+                                        <li class="position-relative">
+                                            <img src="assets/img/icons/mail-small.svg" alt="Icon">
+                                            <span class="text-white fw-medium d-block">Email :</span>
+                                            <a href="mailto:info@createindia.com">info@createindia.com</a>
+                                        </li>
+                                        <li class="position-relative">
+                                            <img src="assets/img/icons/phone-small.svg" alt="Icon">
+                                            <span class="text-white fw-medium d-block">Phone :</span>
+                                            <a href="tel:+917211121121">+91 72111 21121</a><br>
+                                            <a href="tel:+918154000787">+91 81540 00787</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ps-xxl-4 pe-xxl-1">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="text-white fs-20 font-secondary fw-medium mb-12">Create India Advertising</h3>
+                                    <p class="text-white fs-15">
+                                    At Create India Advertising, we craft innovative and result-driven advertising solutions,  
+                                    blending creativity with strategy to help brands grow and connect effectively.
+                                </p>
+                                    <div class="post-share d-flex flex-wrap align-items-center">
+                                        <span class="text-white fw-medium me-2">Follow Us :</span>
+                                        <ul class="social-profile style-one list-unstyled mb-0">
+                                            <li><a href="https://www.facebook.com/CreateIndiaAdvertising/" target="_blank"
+                                                    class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                                        class="ri-facebook-fill"></i></a></li>
+                                            <li><a href="https://www.instagram.com/create_india_advertising/" target="_blank"
+                                                    class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                                        class="ri-instagram-line"></i></a></li>
+                                            <li><a href="https://www.youtube.com/@CreateIndiaAdvertising" target="_blank"
+                                                class="d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                                    <i class="ri-youtube-line"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom position-relative overflow-hidden z-1">
+                        <div class="container-fluid position-relative px-xxl-4">
+                            <img src="assets/img/footertext.svg" alt="Logo">
+                            <p
+                                class="copyright-text position-absolute bg_primary round-oval d-inline-block text-white text-center mb-0">
+                                <i class="ri-copyright-line"></i><span class="text_secondary fw-semibold">Create India Advertising </span> © All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- Link of JS files -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fslightbox.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/scrollTrigger.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/scrollToPlugin.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/customEase.js"></script>
+    <script src="assets/js/scrollcue.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
